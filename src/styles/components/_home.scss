@@ -1,0 +1,146 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 75px);
+  width: 85%;
+  margin: auto;
+  position: relative;
+
+  .home-left {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    span {
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: lighter;
+      text-transform: uppercase;
+      &::after {
+        content: "";
+        width: 300px;
+        height: 2px;
+        display: inline-block;
+        background-color: $white;
+        vertical-align: middle;
+        margin-left: 25px;
+      }
+    }
+
+    p {
+      color: $gray;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+    }
+
+    button {
+      width: 150px;
+      padding: 14px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      background-color: #3f3e77;
+      color: #fff;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+  }
+
+  .home-right {
+    img {
+      width: 360px;
+    }
+  }
+
+  /* Ellipse  */
+  .ellipse {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(33, 168, 191, 0.9);
+    filter: blur(150px);
+  }
+
+  .ellipse1 {
+    top: -254px;
+    left: -380px;
+  }
+
+  .ellipse2 {
+    top: 700px;
+    right: -380px;
+  }
+}
+
+@media (max-width: 1174px) {
+  .home-left {
+    span:nth-child(1) {
+      h2 {
+        font-size: 2rem;
+        font-weight: lighter;
+        text-transform: uppercase;
+        &::after {
+          content: "";
+          width: 200px;
+          height: 2px;
+          display: inline-block;
+          background-color: $white;
+          vertical-align: middle;
+          margin-left: 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .home-left {
+    span:nth-child(2) {
+      h1 {
+        font-size: 2.3rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .home {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .home {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .home {
+    .home-left {
+      span:nth-child(1) {
+        h2 {
+          &::after {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}

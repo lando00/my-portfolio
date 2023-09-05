@@ -1,0 +1,105 @@
+.right_observ,
+.left_observ {
+  transform: translateX(0);
+  opacity: 1;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.top_observ {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.scale_observ {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.5s cubic-bezier(1, 0.3, 0.5, 1.2);
+}
+
+.right_observ.not-visible {
+  transform: translateX(100px);
+  opacity: 0;
+}
+.left_observ.not-visible {
+  transform: translateX(-100px);
+  opacity: 0;
+}
+
+.top_observ.not-visible {
+  transform: translateY(50px);
+  opacity: 0;
+}
+.scale_observ.not-visible {
+  transform: scale(0.5);
+  opacity: 0;
+}
+
+.observe-1 {
+  transition-delay: 500ms;
+}
+
+.observe-2 {
+  transition-delay: 600ms;
+}
+
+.observe-3 {
+  transition-delay: 700ms;
+}
+.observe-4 {
+  transition-delay: 800ms;
+}
+.observe-5 {
+  transition-delay: 900ms;
+}
+
+// :::: HOME :::: //
+
+.toTop {
+  transform: translateY(70px);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1);
+  opacity: 0;
+}
+
+.toTopHeader {
+  transform: translateY(-30px);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1);
+  opacity: 0;
+}
+
+.toRight {
+  transform: translateX(-100%);
+  transition: all 0.6s cubic-bezier(1, 0.3, 0.5, 1.2);
+  opacity: 0;
+}
+
+.notShowRight {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.notShow {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.displayNav {
+  top: 0px;
+  transition: 0.3s;
+  opacity: 1;
+  background: #000;
+  position: sticky;
+}
+
+.delay-1 {
+  transition-delay: 0.4s;
+}
+.delay-2 {
+  transition-delay: 0.6s;
+}
+.delay-3 {
+  transition-delay: 0.8s;
+}
+.delay-4 {
+  transition-delay: 1s;
+}
